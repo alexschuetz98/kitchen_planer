@@ -2,6 +2,7 @@ class UsersController < ApplicationController
 
 	helper_method :users, :user
 
+
 	def new
 		@user = User.new
 	end
