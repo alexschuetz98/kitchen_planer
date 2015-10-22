@@ -10,7 +10,6 @@ class UserSessionsController < ApplicationController
 		if @user = login(params[:user_session][:email], params[:user_session][:password])
 			redirect_back_or_to (:users)
 		else
-			binding.pry
 			flash.now[:alert] = 'login failed'
 			render :new
 		end
