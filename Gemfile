@@ -30,6 +30,8 @@ gem 'pry-remote'
 gem "sorcery"
 gem 'better_errors'
 gem 'simple_form'
+gem 'factory_girl_rails'
+gem 'faker'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
@@ -42,6 +44,11 @@ gem 'simple_form'
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
+  gem 'rspec-rails'
+  gem 'guard-rspec'
+  gem 'rspec-instafail'
+  gem 'shoulda'
+  gem 'shoulda-matchers'
 end
 
 group :development do
